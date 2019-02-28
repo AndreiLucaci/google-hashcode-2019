@@ -19,9 +19,10 @@ namespace GoogleHashCode2019.ConsoleNET
                 var numberOfPhotos = long.Parse(headerLine);
 
                 string line;
+	            int counter = 1;
                 while ((line = streamReader.ReadLine()) != null)
                 {
-                    var splits = line.Split(new char[] { ' ' });
+                    var splits = line.Split(' ');
                     var orientation = splits[0];
                     var numberOfTags = splits[1];
                     var tags = new HashSet<string>();
@@ -34,7 +35,8 @@ namespace GoogleHashCode2019.ConsoleNET
                     {
                         Orientation = orientation == "H" ? Orientation.Horizontal : Orientation.Vertical,
                         NumberOfTags = int.Parse(numberOfTags),
-                        Tags = tags
+                        Tags = tags,
+						Id = counter++
                     });
                 }
             }
