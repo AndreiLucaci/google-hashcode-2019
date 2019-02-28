@@ -13,7 +13,7 @@ namespace GoogleHashCode2019.ConsoleNET
 		{
             var photos = new List<Photo>();
 
-            using (var streamReader = new StreamReader("a_example.txt"))
+            using (var streamReader = new StreamReader("e_shiny_selfies.txt"))
             {
                 string headerLine = streamReader.ReadLine();
                 var numberOfPhotos = long.Parse(headerLine);
