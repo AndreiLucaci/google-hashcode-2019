@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GoogleHashCode2019.ConsoleNET
 {
-	public interface IPhoto : IEquatable<Photo>
+	public interface IPhoto : IEquatable<Photo>, IComparable
 	{
 		int Id { get; set; }
 		int NumberOfTags { get; set; }
