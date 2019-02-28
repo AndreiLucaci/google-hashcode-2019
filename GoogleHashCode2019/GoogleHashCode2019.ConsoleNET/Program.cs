@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,33 @@ namespace GoogleHashCode2019.ConsoleNET
 	{
 		static void Main(string[] args)
 		{
+            var photos = new List<Photo>();
+
+            using (var streamReader = new StreamReader("a_example.txt"))
+            {
+                string headerLine = streamReader.ReadLine();
+                var numberOfPhotos = long.Parse(headerLine);
+
+                string line;
+                while ((line = streamReader.ReadLine()) != null)
+                {
+                    var splits = line.Split(new char[] { ' ' });
+                    var orientation = splits[0];
+                    var numberOfTags = splits[1];
+                    var tags = new HashSet<string>();
+                    foreach (var split in splits.Skip(2))
+                    {
+                        tags.Add(split);
+                    }
+
+                    photos.Add(new Photo
+                    {
+                        Orientation = orientation == "H" ? Orientation.Horizontal : Orientation.Vertical,
+                        NumberOfTags = int.Parse(numberOfTags),
+                        Tags = tags
+                    });
+                }
+            }
 		}
 	}
 }
