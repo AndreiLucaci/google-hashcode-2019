@@ -5,10 +5,10 @@ namespace GoogleHashCode2019.ConsoleNET
 {
 	public class Slide : ISlide
 	{
-		public List<Photo> Photos { get; }
+		public List<IPhoto> Photos { get; }
 		public HashSet<string> Tags { get; } = new HashSet<string>();
 
-		public Slide(params Photo[] photos)
+		public Slide(IEnumerable<IPhoto> photos)
 		{
 			Photos = photos.ToList();
 

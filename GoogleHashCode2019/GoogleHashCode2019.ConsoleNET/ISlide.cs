@@ -4,7 +4,7 @@ namespace GoogleHashCode2019.ConsoleNET
 {
 	public interface ISlide
 	{
-		List<Photo> Photos { get; }
+		List<IPhoto> Photos { get; }
 		HashSet<string> Tags { get; }
 	}
 }
