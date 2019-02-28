@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleHashCode2019.ConsoleNET", "GoogleHashCode2019.ConsoleNET\GoogleHashCode2019.ConsoleNET.csproj", "{A6E9B3AF-F0A5-4C09-B003-5F9DE9FBEDC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleHashCode2019.Tests", "GoogleHashCode2019.Tests\GoogleHashCode2019.Tests.csproj", "{8A7CF73E-42DD-4CF8-BC56-63F6AB58CB56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A6E9B3AF-F0A5-4C09-B003-5F9DE9FBEDC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6E9B3AF-F0A5-4C09-B003-5F9DE9FBEDC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6E9B3AF-F0A5-4C09-B003-5F9DE9FBEDC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7CF73E-42DD-4CF8-BC56-63F6AB58CB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7CF73E-42DD-4CF8-BC56-63F6AB58CB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7CF73E-42DD-4CF8-BC56-63F6AB58CB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7CF73E-42DD-4CF8-BC56-63F6AB58CB56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
